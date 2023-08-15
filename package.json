@@ -1,0 +1,24 @@
+{
+  "name": "mucket",
+  "version": "1.0.0",
+  "description": "A MU* framework using Socket.io, with a client served over HTTPS.",
+  "main": "src/server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/z21210/ws-muck.git"
+  },
+  "author": "",
+  "license": "AGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/z21210/ws-muck/issues"
+  },
+  "homepage": "https://github.com/z21210/ws-muck#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "socket.io": "^4.7.1",
+    "xterm": "^5.2.1"
+  }
+}
