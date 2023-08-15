@@ -1,0 +1,44 @@
+/* light mode */
+@media (not(prefers-color-scheme: dark)) {
+	:root {
+		--background-colour: #EEE;
+		--font-colour: #444;
+	}
+}
+/* dark mode */
+@media (prefers-color-scheme: dark) {
+	:root {
+		--background-colour: #444;
+		--font-colour: #EEE;
+	}
+}
+
+body{
+	color: var(--font-colour);
+	background-color: var(--background-colour);
+	margin: 40px auto;
+	max-width: 80ch;
+	line-height: 1.6em;
+	font-size: 18px;
+	padding: 0;
+}
+
+#output {
+	font-family: monospace;
+	white-space: pre-wrap;
+	display: flex;
+	flex-direction: column-reverse;
+	min-height: 1.6em;
+	height: calc(100vh - 1.6em - 6px - 80px);
+	width: 80ch;
+	padding-left: 4px;	
+	overflow-y: scroll;
+	overflow-wrap: break-word;
+}
+
+#input {
+	width: 80ch;
+	font-family: monospace;
+	line-height: 1.6em;
+	font-size: 18px;
+}
